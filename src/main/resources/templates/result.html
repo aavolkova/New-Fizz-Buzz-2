@@ -71,13 +71,28 @@
 
 
 
-                    <h3 th:inline="text">You entered number: [[${user.number}]]</h3>
-
-         <!--           <p th:text="'Here are the numbers from your number till 1000: ' + ${user.fizzBuzz}"></p> -->
 
 
 
-                    <h3 th:inline="text">Here are the numbers from your number till 1000: [[${user.fizzBuzz}]]</h3>
+                    <h3 th:inline="text">
+                        You entered number: [[${user.number}]].</h3>
+
+                    <!--<form class="well form-horizontal" th:action="@{/enterhere}" method="post" th:object="${newnifb}">-->
+                   <!--<p th:text="'Here are the FizzBuzz numbers from 1 till your number: ' + ${user.fizzString}"></p>-->
+
+
+
+                   <h3 th:inline="text">
+                       Here are the FizzBuzz numbers from 1 till your number:</h3>
+                    <!--<pre>[[${user.fizzString}]]</pre>-->
+                    <pre th:text="${user.fizzString} "/>
+
+
+
+
+
+
+
 
          <!--           <h4>Here are the numbers from your number till 1000: </h4>
                     <h4>[[${user.fizzBuzz}]] </h4>  -->
@@ -101,8 +116,7 @@
                             <p><a class="btn btn-danger" href="/play" role="button">Play Again<span class="glyphicon glyphicon-play"></span></a></p>
                         </div>
                     </div>
-
-
+                    
 
                 </div>
             </div><!-- /.container -->
@@ -111,7 +125,6 @@
 
     </div>
 </section>
-
 
 
 </body>

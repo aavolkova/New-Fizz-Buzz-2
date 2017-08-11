@@ -5,7 +5,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-public class User {
+public class User extends FizzBuzz {
     @NotNull
     @Min(1)
     private long id;
@@ -20,7 +20,15 @@ public class User {
    // @Size(min=10, max=1000)
     private int number;
 
-    private String fizzBuzz;
+    private String fizzString;
+
+    public String getFizzString() {
+        return fizzString;
+    }
+
+    public void setFizzString(int number) {
+        this.fizzString = setFizzBuzz(number);
+    }
 
 
     // Getters and Setters
@@ -48,31 +56,5 @@ public class User {
         this.number = number;
     }
 
-    public String getNIFB() {
-        String fizzBuzz = "";
-        int number = this.number;
-        for (int counter = 10; counter <= number; counter++) {
-            if (counter % 2 == 0)
-                fizzBuzz +="Copy";  // Print number which is multiples of two
-
-            if (counter % 10 == 0)
-                fizzBuzz +="Cat";  // Print number which is multiples of ten
-
-            if (counter % 3 == 0)
-                fizzBuzz +="Fizz";      // Print number which is multiples of three
-
-            if (counter % 5 == 0)
-                fizzBuzz +="Buzz";      // Print number which is multiples of five
-
-            if (counter % 2 != 0 && counter % 10 != 0 && counter % 3 != 0 && counter % 5 != 0)
-                fizzBuzz +=counter;     // Print number which is not multiples of two, three, five, or ten)
-            fizzBuzz += "/n";
-        }
-        return fizzBuzz;
-    }
-
-    public void setNIFB(String fizzBuzz) {
-        this.fizzBuzz = fizzBuzz;
-    }
 
 }
