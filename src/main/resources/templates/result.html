@@ -84,10 +84,19 @@
 
                    <h3 th:inline="text">
                        Here are the FizzBuzz numbers from 1 till your number:</h3>
-                    <!--<pre>[[${user.fizzString}]]</pre>-->
                     <pre th:text="${user.fizzString} "/>
 
 
+
+                    <!--<pre>[[${user.fizzString}]]</pre>-->
+
+
+
+
+                    <!--<pre th:text="${user.myFizzBuzz(user.getNumber())} "/>-->
+                    <!--<pre th:text="${user.fizzBuzz} "/>-->
+
+                    <!--<p th:text="${fizzResult}"></p>-->
 
 
 

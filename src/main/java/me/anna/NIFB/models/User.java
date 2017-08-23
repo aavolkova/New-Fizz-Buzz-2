@@ -1,9 +1,6 @@
 package me.anna.NIFB.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -23,9 +20,9 @@ public class User extends FizzBuzz {
     @NotNull
     @Min(10)
     @Max(1000)
-   // @Size(min=10, max=1000)
     private int number;
 
+    @Column(columnDefinition = "TEXT")
     private String fizzString;
 
 
@@ -57,6 +54,7 @@ public class User extends FizzBuzz {
         this.number = number;
     }
 
+
     public String getFizzString() {
         return fizzString;
     }
@@ -64,6 +62,46 @@ public class User extends FizzBuzz {
     public void setFizzString(int number) {
         this.fizzString = setFizzBuzz(number);
     }
+
+
+
+
+//    public String myFizzBuzz(int myNumber) {
+//
+//        String newFizzBuzz = "";
+//
+//        for (int counter = 1; counter <= myNumber; counter++)
+//        {
+//            if (counter % 2 == 0)
+//                newFizzBuzz +="Copy";
+//
+//            if (counter % 10 == 0)
+//                newFizzBuzz +="Cat";
+//
+//            if (counter % 3 == 0)
+//                newFizzBuzz +="Fizz";
+//
+//            if (counter % 5 == 0)
+//                newFizzBuzz +="Buzz";
+//
+//            if (counter % 2 != 0 && counter % 10 != 0 && counter % 3 != 0 && counter % 5 != 0)
+//                newFizzBuzz +=counter;
+//            newFizzBuzz += "\n";
+//        }
+//
+//        return newFizzBuzz;
+//    }
+
+
+
+
+//    public String getFizzString() {
+//        return fizzString;
+//    }
+//
+//    public void setFizzString(int number) {
+//        this.fizzString = setFizzBuzz(number);
+//    }
 
 //
 //    public ArrayList<String> runFizzBuzz()
