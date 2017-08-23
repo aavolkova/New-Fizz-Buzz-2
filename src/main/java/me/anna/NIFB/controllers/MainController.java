@@ -22,13 +22,13 @@ public class MainController {
     UserRepository userRepository;
 
 
-
     // Show Home Page
     @GetMapping("/")
     public String showHome(Model model)
     {
         return "CoverTemplateforBootstrap";
     }
+
     // Show Welcome Page
     @GetMapping("/welcome")
     public String showWelcome(Model model)
@@ -56,8 +56,9 @@ public class MainController {
         }
 
         user.setFizzString(user.getNumber());
-
-        System.out.print("This is a string of numbers; " + user.getFizzString()); //fizzbuzz.setFizzBuzz(user.getNumber()));  //+ user.getFizzString());
+        
+// Display FizzBuzz string on the console
+//        System.out.print("This is a string of numbers; " + user.getFizzString()); //fizzbuzz.setFizzBuzz(user.getNumber()));  //+ user.getFizzString());
 
         userRepository.save(user);
         return "result";
