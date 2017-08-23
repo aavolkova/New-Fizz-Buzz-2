@@ -61,21 +61,21 @@
 		</dependency>
 
 
-		<!--<dependency>-->
-			<!--<groupId>org.hibernate</groupId>-->
-			<!--<artifactId>hibernate-core</artifactId>-->
-			<!--<version>5.0.12.Final</version>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>org.hibernate.javax.persistence</groupId>-->
-			<!--<artifactId>hibernate-jpa-2.1-api</artifactId>-->
-			<!--<version>1.0.0.Final</version>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.data</groupId>-->
-			<!--<artifactId>spring-data-commons</artifactId>-->
-			<!--<version>1.13.3.RELEASE</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.0.12.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+			<version>1.13.3.RELEASE</version>
+		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/net.sourceforge.nekohtml/nekohtml -->

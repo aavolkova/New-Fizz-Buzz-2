@@ -56,7 +56,7 @@ public class MainController {
         }
 
         user.setFizzString(user.getNumber());
-        
+
 // Display FizzBuzz string on the console
 //        System.out.print("This is a string of numbers; " + user.getFizzString()); //fizzbuzz.setFizzBuzz(user.getNumber()));  //+ user.getFizzString());
 
